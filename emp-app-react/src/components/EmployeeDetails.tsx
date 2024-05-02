@@ -90,6 +90,7 @@ function EmployeeDetails() {
             name="firstName"
             value={employeeDetails?.firstName}
             onChange={handleInputChange}
+            placeholder="Apal"
             required
           />
         </div>
@@ -104,6 +105,7 @@ function EmployeeDetails() {
             name="lastName"
             value={employeeDetails?.lastName}
             onChange={handleInputChange}
+            placeholder="Shah"
             required
           />
         </div>
@@ -117,6 +119,8 @@ function EmployeeDetails() {
             id="phone"
             name="phone"
             value={employeeDetails?.phone}
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" // phone number needs to be in this pattern
+            placeholder="Enter phone number (e.g., XXX-XXX-XXXX)"
             onChange={handleInputChange}
             required
           />
@@ -132,6 +136,7 @@ function EmployeeDetails() {
             name="email"
             value={employeeDetails?.email}
             onChange={handleInputChange}
+            placeholder="apalshah@gmail.com"
             required
           />
         </div>

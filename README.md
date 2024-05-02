@@ -20,7 +20,6 @@ python3 manage.py createsuperuser
 python3 manage.py runserver
 ```
 
-
 # Setup and run react frontend (open a different terminal)
 ```bash
 cd emp-app-react
@@ -31,3 +30,8 @@ npm run dev
 # How to open the react app
  - URL: http://localhost:5173/
  - Initially employees list would be empty, you can create, edit, update and delete employees as per requirements
+
+ # How to clean up your Django environment
+ ```bash
+ rm -rf venv empapi/migrations db.sqlite3
+ ```
