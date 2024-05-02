@@ -9,7 +9,7 @@ git clone git@github.com:apalshah/instamart-take-home.git
 cd instamart-take-home
 ```
 
-# Setup Django backend
+# Setup Django backend 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
